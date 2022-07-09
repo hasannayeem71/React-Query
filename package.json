@@ -4,17 +4,20 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.27.2",
+    "json-server": "^0.17.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-query": "^3.39.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate": "node ./util/create.js"
+    "generate": "node ./util/create.js",
+    "serve-json": "json-server --watch db.json --port 4000"
   },
   "eslintConfig": {
     "extends": [
